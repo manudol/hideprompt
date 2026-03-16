@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy — HidePrompt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0e0e;
+      --surface: #161616;
+      --border: #2a2a2a;
+      --text: #f0ede8;
+      --muted: #888880;
+      --accent: #e8d5a3;
+      --accent2: #c8a96e;
+      --green: #4ade80;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+
+    main {
+      max-width: 680px;
+      margin: 5rem auto;
+      padding: 0 3rem;
+    }
+
+    h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 3rem;
+    }
+
+    .summary-box {
+      border: 1px solid rgba(74,222,128,0.25);
+      background: rgba(74,222,128,0.04);
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 0.8rem;
+      line-height: 1.8;
+      color: var(--green);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      font-size: 0.78rem;
+      line-height: 1.9;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      margin-top: 6rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">hide<span>prompt</span>.chat</a>
+</nav>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="last-updated">Last updated: March 2026</p>
+
+  <div class="summary-box">
+    Short version: we collect nothing. The extension has no server, no analytics, no tracking of any kind. Your conversations stay between you and the AI.
+  </div>
+
+  <section>
+    <h2>What we collect</h2>
+    <p>Nothing. HidePrompt does not collect, store, transmit, or process any data about you or your usage.</p>
+  </section>
+
+  <section>
+    <h2>How the extension works</h2>
+    <p>The extension runs entirely in your browser. When you toggle the prompt bar, it applies or removes a CSS class on the page — that's it. No network requests are made. No content is read. No keystrokes are logged.</p>
+  </section>
+
+  <section>
+    <h2>Third parties</h2>
+    <p>We have no third-party integrations. No analytics service. No crash reporting. No advertising network. Nothing is shared with anyone because nothing is collected.</p>
+  </section>
+
+  <section>
+    <h2>Open source</h2>
+    <p>HidePrompt is fully open source. You can read every line of code on GitHub and verify these claims yourself. There is nothing hidden.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>If you have any questions, open an issue on GitHub.</p>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 hideprompt.chat</span>
+  <a href="index.html">← Back to home</a>
+</footer>
+
+</body>
+</html>
